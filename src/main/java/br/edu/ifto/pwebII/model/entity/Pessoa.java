@@ -13,7 +13,7 @@ public class Pessoa {
 
     String nome;
 
-    String teleone;
+    String telefone;
 
     //OneToOne
     //OneToMany
