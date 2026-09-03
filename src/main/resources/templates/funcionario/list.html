@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="table" border="1">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Descrição</th>
+    </tr>
+    </thead>
+    <tr th:each="f : ${funcionarios}">
+        <td th:text="${f.id}"> </td>
+        <td th:text="${f.nome}"> </td>
+        <td> <a th:href="@{/funcionario/edit/{id}(id=${f.id})}">Editar</a> </td>
+        <td> <a onclick="return window.confirm('Tem certeza que deseja excluir este registro?')"  th:href="@{/funcionario/remove/{id}(id=${f.id})}">Excluir</a> </td>
+    </tr>
+</table>
+</body>
+</html>
