@@ -15,11 +15,6 @@ public class Pessoa {
 
     String telefone;
 
-    //OneToOne
-    //OneToMany
-    //ManyToOne
-    //ManyToMany
-
     @ManyToMany
     List<Endereco> enderecos;
 
