@@ -1,0 +1,13 @@
+package br.edu.ifto.pwebII.model.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public abstract class PessoaFisica extends Pessoa{
+
+    String nome;
+
+    String cpf;
+
+
+}
