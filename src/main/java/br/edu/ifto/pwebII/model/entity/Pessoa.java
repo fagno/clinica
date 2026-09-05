@@ -5,13 +5,11 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-public class Pessoa {
+public abstract class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
-
-    String nome;
 
     String telefone;
 
