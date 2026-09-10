@@ -2,6 +2,8 @@ package br.edu.ifto.pwebII.model.entity;
 
 import jakarta.persistence.Entity;
 
+import java.time.LocalDate;
+
 @Entity
 public abstract class PessoaFisica extends Pessoa{
 
@@ -9,5 +11,6 @@ public abstract class PessoaFisica extends Pessoa{
 
     String cpf;
 
+    LocalDate dataNascimento;
 
 }
