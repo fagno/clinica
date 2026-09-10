@@ -18,4 +18,14 @@ public class FuncionarioRepository {
         Query query = em.createQuery("from Funcionario"); //Linguagem HQL
         return query.getResultList();
     }
+
+    public Funcionario funcionario(Long id){
+        return em.find(Funcionario.class, id);
+    }
+
+    public void remove(Long id){
+        Funcionario f = em.find(Funcionario.class, id);
+        em.remove(f);
+    }
+
 }
