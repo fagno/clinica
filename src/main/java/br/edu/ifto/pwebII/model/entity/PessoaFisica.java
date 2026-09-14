@@ -13,6 +13,8 @@ public abstract class PessoaFisica extends Pessoa{
 
     LocalDate dataNascimento;
 
+    String rg;
+
     public String getNome() {
         return nome;
     }
