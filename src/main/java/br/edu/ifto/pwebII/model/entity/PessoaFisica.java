@@ -15,6 +15,8 @@ public abstract class PessoaFisica extends Pessoa{
 
     private String email;
 
+    String rg;
+
     public String getNome() {
         return nome;
     }
