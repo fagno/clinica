@@ -15,7 +15,7 @@ public abstract class PessoaFisica extends Pessoa{
 
     private String email;
 
-    String rg;
+    String carteiraNacional;
 
     public String getNome() {
         return nome;
@@ -47,5 +47,13 @@ public abstract class PessoaFisica extends Pessoa{
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getCarteiraNacional() {
+        return carteiraNacional;
+    }
+
+    public void setCarteiraNacional(String carteiraNacional) {
+        this.carteiraNacional = carteiraNacional;
     }
 }
