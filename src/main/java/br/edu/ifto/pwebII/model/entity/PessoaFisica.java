@@ -7,13 +7,13 @@ import java.time.LocalDate;
 @Entity
 public abstract class PessoaFisica extends Pessoa{
 
-    String nome;
+    private String nome;
 
-    String cpf;
+    private String cpf;
 
-    LocalDate dataNascimento;
+    private LocalDate dataNascimento;
 
-    String email;
+    private String email;
 
     public String getNome() {
         return nome;
